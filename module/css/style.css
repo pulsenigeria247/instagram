@@ -1,0 +1,358 @@
+/* -------------------- Main container -------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+	overflow-x: hidden;
+    width: 100vw;
+}
+/* -------------------- *
+/* -------------------- -------------------- Root -------------------- -------------------- */
+:root{
+	/* -------------------- Background colours -------------------- */
+		--white-background: rgba(255, 255, 255, 255);
+		--background-pri-theme: rgba(238, 234, 231, 255);
+		--background-sec-theme: rgba(243,244,246,255);
+		--web-name-color: rgba(250, 136, 37, 255);
+		--overlay-colour: rgba(0, 0, 0, 0.35);
+	/* -------------------- -------------------- -------------------- */
+
+
+
+	/* -------------------- Border -------------------- */
+		--dark-font: rgba(60, 64, 66, 255);
+		--white-font: rgba(255, 255, 255, 255);
+		--web-font: rgba(250, 136, 37, 255);
+		--green-font: rgba(0, 168, 107, 255);
+	/* -------------------- -------------------- -------------------- */
+}
+
+
+/* -------------------- -------------------- STYLES CREATED DURING [SOCIAL MEDIA - PAGE] -------------------- -------------------- */
+    /* --------------------  -------------------- */
+	.social-parent-con{
+		background: radial-gradient(circle at 0% 20%, #f15245 2%, #d92e7f 4%, #9b36b7 5%, #0064e0 81%, #0064e0 85%);
+		height: auto;
+		width: 100%;
+	}
+	.social-con{
+		background: rgba(255, 255, 255, 0.925);
+		backdrop-filter: blur(15px);
+		position: relative;
+		height: auto;
+		width: 100%;
+	}
+    /* -------------------- --------------------  -------------------- */
+
+
+    
+    
+    /* --------------------  -------------------- */
+	.social-img{
+		height: auto;
+		margin: auto;
+		width: 4em;
+	}
+	
+	.social-field {
+		position: relative;
+		font-size: 14px;
+		border-top: 20px solid transparent;
+		display: inline-block;
+		width: 100%;
+		--field-padding: 25px 15px 10px 15px;
+	}
+		
+	.social-field input {
+		border: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		padding: var(--field-padding);
+		border-radius: 0.75em;
+		width: 100%;
+		outline: none;
+		font-size: 1.05em;
+	}
+	.social-field .placeholder {
+		position: absolute;
+		left: var(--field-padding);
+		background: transparent;
+		width: calc(100% - (var(--field-padding) * 2));
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		top: 31px;
+		line-height: 100%;
+		transform: translateY(-50%);
+		color: #aaa;
+		transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+	}
+		
+	/* ONE */
+	.social-field.one input {
+		background: #fff;
+		border: 2px solid #c8c8c8;
+		transition: border-color 0.3s ease;
+	}
+		
+	.social-field.one input + .placeholder {
+		left: 8px;
+		padding: 0 5px;
+	}
+		
+	.social-field.one input.dirty,
+	.social-field.one input:not(:placeholder-shown),
+	.social-field.one input:focus {
+		border-color: var(--dark-font);
+		transition-delay: 0.1s;
+	}
+		
+	.social-field.one input.dirty + .placeholder,
+	.social-field.one input:not(:placeholder-shown) + .placeholder,
+	.social-field.one input:focus + .placeholder {
+		top: 19px;
+		font-size: 11px;
+		color: #222;
+		font-weight: 500;
+		opacity: 1;
+		background: var(--white-background);
+		width: auto;
+	}
+    /* -------------------- --------------------  -------------------- */
+
+
+    
+    
+    /* --------------------  -------------------- */
+	.social-main-con{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 0.5em;
+		position: relative;
+		min-height: 100vh;
+		width: 100%;
+	}
+    .social-top-con{
+        height: auto;
+		width: 100%;
+		padding-top: 5em;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+    }
+	.social-btn{
+		align-items: center;
+		background: #d6249f;
+		display: flex;
+        cursor: pointer;
+        color: var(--white-font);
+		font-size: 1em;
+		border-radius: 50em;
+		padding: 0.75em 0;
+		margin-top: 0.75em;
+		height: auto;
+		justify-content: center;
+		text-align: center;
+        outline: none;
+        border: none;
+		width: 100%;
+	}
+	.index-btn{
+		align-items: center;
+		background: #d6249f;
+		display: flex;
+        cursor: pointer;
+        color: var(--white-font);
+		font-size: 1em;
+		border-radius: 50em;
+		padding: 0.75em 0;
+		margin-top: 0.75em;
+		height: auto;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+	}
+	.social-bot-con{
+		width: fit-content;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		left: 0;
+		position: absolute;
+        height: auto;
+		bottom: 1em;
+		margin: auto;
+	}
+	.social-cr8-btn {
+		align-items: center;
+		background: transparent;
+		border: 2px solid #d6249f;
+		color: #d6249f;
+        cursor: pointer;
+		display: flex;
+		font-size: 1em;
+		border-radius: 50em;
+		padding: 0.75em 0;
+		margin-top: 0.75em;
+		height: auto;
+		justify-content: center;
+		text-align: center;
+		width: fit-content;
+	}
+	.passwrd{
+		height: auto;
+		font-size: 1em;
+		font-weight: 400;
+		margin: auto;
+        cursor: pointer;
+		margin-top: 1.25em;
+		width: fit-content;
+	}
+	.social-logo{
+		height: auto;
+		margin: 0.75em 0;
+		width: 3.5em;
+	}
+    /* -------------------- --------------------  -------------------- */
+
+
+    
+    
+    /* --------------------  -------------------- */
+    .facebook-social{
+        height: auto;
+        margin-bottom: 1em;
+        width: 8em;
+    }
+    .facebook-social-txt{
+        font-size: 1em;
+        font-weight: 500;
+        padding-right: 1em;
+    }
+    .instagram-social{
+        height: auto;
+        margin: auto;
+        width: 12.5em;
+    }
+	.img-wrap{
+		width: 50%;
+		height: auto;
+		border-radius: 50%;
+		padding: 8px;
+		background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+		margin: auto;
+	}
+	.header-img-white{
+		background: var(--white-background);
+		height: auto;
+		border-radius: 50%;
+		width: fit-content;
+	}
+	.main-txt{
+		text-align: center;
+		font-size: 0.9em;
+		padding-top: 2em;
+		font-weight: 500;
+	}
+	.ind-row{
+		display: flex;
+		flex-direction: row;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		height: auto;
+		width: 100%;
+	}
+	.right-side{
+		width: 100%;
+		cursor: pointer;
+		height: auto;
+		font-size: 0.9em;
+		font-weight: 500;
+		padding: 0.75em 0.25em;
+		text-align: center;
+		border: 1.5px solid #d6249f;
+		border-left: none;
+		border-right: none;
+		margin: auto;
+	}
+	.left-side{
+		width: 100%;
+		cursor: pointer;
+		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.75em 0.25em;
+		text-align: center;
+		font-size: 0.9em;
+		font-weight: 500;
+		border: 1.5px solid #d6249f;
+		border-right: none;
+		margin: auto;
+	}
+	.left-img{
+		height: auto;
+		width: 1.75em;
+	}
+    .custom-row{
+    	display: flex;
+    	flex-direction: row;
+    	height: auto;
+    	width: fit-content;
+    }
+    .social-nav-con{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: space-between;
+        padding: 1.2em 0;
+        width: 100%;
+    }
+	.list-back-btn{
+		cursor: pointer;
+		height: auto;
+		width: 0.75em;
+	}
+	.help-header-txt {
+		font-size: 1.05em;
+		font-weight: 500;
+		padding-left: 1em;
+	}
+	/* One-line */
+	.one-line{
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+	}
+    /* -------------------- --------------------  -------------------- */  
+        
+
+
+    /* -------------------- Home page scrollbar style -------------------- */
+        body::-webkit-scrollbar-track{
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            background-color: #F5F5F5;
+            border: 0.25em solid transparent;
+        }
+        body::-webkit-scrollbar{
+            width: 0.25em;
+            background-color: #F5F5F5;
+        }
+        body::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #d6249f;
+        }
+    /* -------------------- --------------------  -------------------- */
+/* -------------------- -------------------- -------------------- -------------------- -------------------- */
